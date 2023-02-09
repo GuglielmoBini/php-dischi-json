@@ -25,6 +25,30 @@
     <title>Dischi json php</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header>
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <h1 class="text-success">Boolify</h1>
+        </div>
+      </header>
+      <main>
+        <div class="container h-100">
+          <div class="row row-cols-3">
+            <div v-for="disc in discs" :key="disc.title" class="col p-5">
+              <div class="discs-card text-center">
+                <img
+                  class="img-fluid my-5"
+                  :src="disc.poster"
+                  :alt="disc.title" />
+                <h4>{{ disc.title }}</h4>
+                <h5>{{ disc.author }}</h5>
+                <h4>{{ disc.year }}</h4>
+                <div class="pb-3">{{ disc.genre}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-
+// dati di base
 $discs = [
     [
         'title' => 'New Jersey',
@@ -72,6 +72,7 @@ $discs = [
         'genre' => 'Pop'
     ],
 ];
-
+// dico al server che voglio scrivere in JSON
 header('Content-Type: application/json');
+// converto in JSON e restituisco i dischi
 echo json_encode($discs);

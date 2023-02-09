@@ -1,0 +1,19 @@
+header {
+  height: 100px;
+  background-color: #06131f;
+}
+
+main {
+  height: 100vh;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.discs-card {
+  background-color: #112030;
+  border-radius: 15px;
+}
